@@ -3,7 +3,7 @@
 - Construção de uma ferramenta chamada SIEM Lite.
 - SIEM significa Security Information and Event Management.
 
-## Execução:
+## Execução (ainda não está pronto):
 - Rode no terminal: python main.py access.log
 
 ## Fluxo do programa:
