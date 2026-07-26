@@ -1,4 +1,4 @@
-# Projeto SIEM Lite - SQL + Python
+# Projeto Mini SIEM Lite - SQL + Python
 ## Objetivo do projeto
 - Construção de uma ferramenta chamada SIEM Lite.
 - SIEM significa Security Information and Event Management.
