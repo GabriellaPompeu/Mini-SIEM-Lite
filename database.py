@@ -39,3 +39,13 @@ def insert_log(event: LogEvent):
 
     connection.commit()
     connection.close()
+
+def clear_logs():
+    connection = create_connection()
+    cursor = connection.cursor()
+
+    cursor.execute("DELETE FROM logs")
+
+    connection.commit()
+    connection.close()
+
