@@ -18,6 +18,24 @@ def top_ip():
 
     return result
 
+def top_endpoints(limit=5):
+    connection = create_connection()
+    cursor = connection.cursor()
+
+    cursor.execute("""
+        SELECT endpoint, COUNT(*) AS total
+        FROM logs
+        GROUP BY endpoint
+        ORDER BY total DESC
+        LIMIT ?;
+    """, (limit,))
+
+    result = cursor.fetchall()
+
+    connection.close()
+
+    return result
+
 def brute_force():
     connection = create_connection()
     cursor = connection.cursor()

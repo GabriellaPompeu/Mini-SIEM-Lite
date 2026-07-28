@@ -9,7 +9,7 @@ LOGS_PATH = Path("logs") / "access.log"
 def main():
     create_table()
     clear_logs()
-    print("Inicializando SIEM...")
+    print("Inicializando SIEM...\n")
 
     count = 0
 
@@ -21,7 +21,7 @@ def main():
                 insert_log(event)
                 count += 1
 
-    print(f'{count} eventos importados')
+    print(f'{count} eventos importados\n')
 
     generate_report()
     
