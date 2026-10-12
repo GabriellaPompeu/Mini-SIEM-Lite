@@ -1,0 +1,16 @@
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+
+# Banco de dados local
+database/*.db
+database/*.sqlite
+database/*.sqlite3
+
+# Logs gerados durante os testes
+logs/access.log
+
+# Segredos e configurações locais
+.env
